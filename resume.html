@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Web Resume</title>    
+
+    <!-- Adding bootstrap into our page -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<!-- We are going to restructure our html to utilize the bootstrap grid system layout -->
+<body>
+  <!-- Header Section -->
+    <header class="container mt-4 mb-5 bg-light p-3 rounded">
+        <div class="row align-items-center">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <img src="assets/profile.jpg" alt="Professional profile picture of Your Name" class="img-fluid rounded-circle">
+            </div>
+            <!-- Amplify the name and welcome message, making them stand out as main points -->
+            <div class="col-md-8">
+                <h1 class="display-4">Your Name</h1>
+                <p class="lead">Welcome to my professional web resume.</p>
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">Your Name</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#header">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#education">Education</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#work-experience">Work Experience</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#testimonials">Testimonials</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#recent-projects">Recent Projects</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#podcast-features">Podcast Features</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#project-highlights">Project Highlights</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#tutorials-talks">Tutorials & Talks</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contact-me">Contact Me</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+    <!-- Skills Section -->
+     <!-- Skills table will be more readable on smaller screens -->
+    <section class="container my-4">
+        <h2 class="h4">Skills</h2>
+        <table class="table table-striped table-light">
+            <tr>
+                <th>Technology</th>
+                <th>Proficiency</th>
+                <th>Years of Experience</th>
+            </tr>
+            <tr>
+                <td>HTML/CSS</td>
+                <td>Expert</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Intermediate</td>
+                <td>3</td>
+            </tr>
+            <!-- Add more skills as needed -->
+        </table>
+    </section>
+
+
+    <!-- Education Section -->
+     <!-- Adding margins  -->
+    <article class="container my-4 bg-info text-white p-3 rounded">
+        <h2 class="h4">Education</h2>
+        <!-- remove default list styling, ensuring a cleaner look -->
+        <ul class="list-unstyled">
+            <li><a href="<https://universitywebsite.com>"><strong>University Name</strong></a>, Bachelor's Degree, Graduation Year</li>
+            <!-- Add more educational qualifications as needed -->
+        </ul>
+    </article>
+
+    <!-- Work Experience section -->
+    <article class="container my-4 bg-info text-white p-3 rounded">
+        <h2 class="h4">Work Experience</h2>
+        <p><strong>Job Title</strong>, Company Name <em>(Year-Year)</em></p>
+        <!-- Add more experiences as needed -->
+    </article>        
+
+    <!-- Testimonial Section -->
+     <!-- Add semantic importance and visual differentiation to the quote and its attribution -->
+    <aside class="container my-4 p-4 bg-success text-white rounded">
+        <h2>Testimonials</h2>
+        <blockquote cite="<http://example.com/fiona-feedback>" class="blockquote">
+            "Your Name has been an exceptional team player, consistently delivering projects on time and with high quality."
+        </blockquote>
+        <footer class="blockquote-footer text-white">Fiona Smith, Project Manager at Company Name</footer>
+    </aside>
+
+    <!-- Recent Projects Section -->
+     <!-- Updating proejcts, podcast featyresm and project highlights section to have a light rounded background -->
+    <section  class="container my-4 bg-light p-3 border rounded">
+        <h2 class="h5">Recent Projects</h2>
+        <p>Project Name: Website Redesign</p>
+        <pre><code>&lt;!-- HTML structure of the redesigned homepage --&gt;
+&lt;div class="container"&gt;
+    &lt;header&gt;...&lt;/header&gt;
+    &lt;nav&gt;...&lt;/nav&gt;
+    &lt;main&gt;...&lt;/main&gt;
+    &lt;footer&gt;...&lt;/footer&gt;
+&lt;/div&gt;
+</code></pre>
+    </section>
+    
+    <!-- Podcast Features Section -->
+    <section  class="container my-4 bg-light p-3 border rounded">
+        <h2>Podcast Features</h2>
+        <audio controls>
+            <source src="assets/invalid_keypress.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    
+    <!-- Project Highlights Section -->
+    <section  class="container my-4 bg-light p-3 border rounded">
+        <h2>Project Highlights</h2>
+        <video width="320" height="240" controls>
+            <source src="assets/Praline-Tin-GIF-Official_Proxy.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Tutorials & Talks Section -->
+    <!-- Make this section stand out -->
+    <section class="container my-4 bg-warning text-dark p-3 rounded">
+        <h2>Tutorials & Talks</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <!-- Contact Form Section -->
+    <aside class="container my-4 bg-primary text-white p-3 rounded">
+        <h1 class="h4">Contact Me</h1>
+
+        <form action="/submit" method="post" class="p-3 rounded">
+            <fieldset>
+                <legend class="h6">Contact Information</legend>
+                
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}">
+            </fieldset>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" cols="50" placeholder="Your message here" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </aside>
+
+    <footer class="container-fluid py-3 mt-5 text-center bg-dark">
+	    <p class="text-white">&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
